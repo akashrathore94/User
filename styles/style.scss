@@ -1,82 +1,18 @@
-/*****GLOBAL STYLES*****/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
 
-@font-face {
-  font-family: "Ruhl";
-  src: url(fonts/FrankRuhlLibre-Regular.ttf);
-}
-
-html {
-  font-size: 62.5%;
-  --header1: calc(2rem + 1vw);
-  --header2: calc(3.5rem + 1vw);
-  --header3: calc(2.8rem + 1vw);
-  --header4: calc(2.4rem + 1vw);
-  --text: calc(1.3rem + 1vw);
-  --big: calc(6rem + 1vw);
-  --special-color: #906272;
-  --background-color: #414141;
-  --gray-text: #525252;
-}
-
-h1 {
-  font-size: var(--header1);
-}
-
-li,
-button,
-label,
-input,
-a,
-p {
-  font-size: var(--text);
-}
-
-h2 {
-  font-size: var(--header2);
-}
-
-h3 {
-  font-size: var(--header3);
-}
-
-h4,
-h5 {
-  font-size: var(--header4);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-.flex {
+@mixin flex($justify, $align, $direction) {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
-body {
-   font-family:  "Ruhl", sans-serif;
-}
-
-@media screen and (min-width: 1700px) {
-  html {
-    --header1: 3rem;
-    --header2: 5rem;
-    --header3: 4rem;
-    --header4: 3rem;
-    --text: 3rem;
-    --big: 8rem;
-    --foot: 1.3rem;
-  }
-}
+@import "global";
+@import "intro";
