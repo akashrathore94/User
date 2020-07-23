@@ -182,4 +182,31 @@ nav ul {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
 }
+
+#plant-leaf {
+  -webkit-animation: plant 1.5s ease infinite alternate;
+          animation: plant 1.5s ease infinite alternate;
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  to {
+    -webkit-transform: translate(-30%);
+            transform: translate(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  to {
+    -webkit-transform: translate(-30%);
+            transform: translate(-30%);
+  }
+}
 /*# sourceMappingURL=style.css.map */

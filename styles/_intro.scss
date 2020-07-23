@@ -72,3 +72,16 @@ nav {
 .intro-images {
   flex: 1 1 40rem;
 }
+
+#plant-leaf {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+@keyframes plant {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(-30%);
+  }
+}
