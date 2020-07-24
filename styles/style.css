@@ -297,6 +297,12 @@ nav ul {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .splash {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 820px) {
   html {
     font-size: 45%;
