@@ -22,7 +22,7 @@ nav {
 }
 
 .intro {
-  min-height: 90vh;
+  min-height: 89vh;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -71,6 +71,9 @@ nav {
 .intro-text,
 .intro-images {
   flex: 1 1 40rem;
+}
+.intro-images {
+  text-align: center;
 }
 
 #plant-left {
