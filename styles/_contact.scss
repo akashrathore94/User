@@ -1,5 +1,5 @@
 .form-section {
-  min-height: 80vh;
+  min-height: 70vh;
   @include flex(center, center, row);
   margin-top: 3rem;
 
@@ -12,9 +12,22 @@
 
     input,
     textarea {
-      margin: 2rem;
+      margin: 1.5rem;
       &:focus {
-        outline: 2px solid black;
+        outline: 1px solid black;
+      }
+    }
+    textarea {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2rem;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      background: $background-color;
+      color: white;
+      &:focus {
+        background: rgb(51, 105, 107);
       }
     }
   }
